@@ -32,7 +32,6 @@ export class AppModule {
     const ngCustomElement = createCustomElement(CustomelementComponent, { injector });
 
     // define in browser registry
-    customElements.define('ng-el', ngCustomElement);
-
+    customElements.define('ng-el', ngCustomElement as any);
   }
 }
