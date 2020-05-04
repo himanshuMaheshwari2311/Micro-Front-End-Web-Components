@@ -16,4 +16,8 @@ export class CustomelementComponent implements OnInit {
   ngOnInit() {
   }
 
+  clickHandle = () => {
+    this.helloEvt.emit('Angular component says hello to: ' + this.name);
+  }
+
 }
